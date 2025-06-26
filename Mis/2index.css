@@ -1,0 +1,101 @@
+:root {
+  --primary-background: rgb(216, 129, 98);
+  --secundary-background: brown;
+  --padding-default: 10px;
+  --border-color: black;
+  --header-color: rgb(98, 138, 98);
+  --pressed-button: rgb(19, 91, 37);
+  --margin-default: 5px;
+  --radius-default: 5px;
+  --element-height: 50px;
+  --element-width: 150px;
+  --border-default: 5px;
+}
+
+.bar {
+  border: var(--border-default) solid var(--border-color);
+  background-color: var(--header-color);
+  text-align: center;
+  padding: 10px 0;
+  color: black; /* Texto en negro */
+}
+
+.container {
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tablas con forma rectangular y separación mínima */
+table {
+  border-collapse: collapse;
+  border: 1px solid gray;
+  border-radius: var(--radius-default);
+  background-color: var(--header-color);
+  margin: 5px 0; /* Espacio mínimo entre tablas */
+  width: 800px;
+  max-width: 95vw;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px 10px; /* Padding equilibrado */
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ancho parejo para columnas */
+th:nth-child(1), td:nth-child(1),
+th:nth-child(2), td:nth-child(2),
+th:nth-child(3), td:nth-child(3),
+th:nth-child(4), td:nth-child(4),
+th:nth-child(5), td:nth-child(5),
+th:nth-child(6), td:nth-child(6) {
+  width: 150px;
+}
+
+/* Encabezados con fondo más fuerte */
+th[colspan] {
+  font-size: 1.2rem;
+  padding: 15px 0;
+  background-color: var(--secundary-background);
+  color: white;
+}
+
+th {
+  background-color: var(--secundary-background);
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: var(--primary-background);
+  color: black;
+}
+
+table td img {
+  max-height: 90px;
+  border-radius: var(--radius-default);
+}
+
+.item-left {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.item-left img {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.item-left img:hover {
+  transform: scale(1.1);
+}
