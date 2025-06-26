@@ -1,0 +1,114 @@
+:root {
+--primary-background: rgb(216, 129, 98); 
+--secundary-background: brown;
+--pading-default: auto;
+--border-color: black;
+--header-color: rgb(98, 138, 98);
+--pressed-button: rgb(19, 91, 37);
+--margin-default: 10px;
+--radius-default: 5px;
+--element-height: 50px;
+--element-width: 100px;
+--border-default: 5px;
+}
+
+.bar {
+border: var(--border-default) solid var(--border-color);
+background-color: var(--header-color);
+text-align: center;
+}
+
+.container {
+text-align: center;
+justify-content: center;
+padding: var(--pading-default);
+text-align: center;
+margin: var(--margin-default);
+}
+
+
+.card {
+border: var(--border-default) double var(--secundary-background);
+border-radius: 5px;
+background-color: var(--primary-background);
+text-align: center;
+width: auto;
+align-items: center;
+padding: var(--pading-default);
+margin: var(--margin-default);
+}
+
+button {
+background-color: #007BFF;
+box-shadow: 5px;
+margin: var(--margin-default);
+width: var(--element-width);
+height: var(--element-width);
+color: white;
+}
+
+input {
+border-bottom-left-radius: 12px;
+border-top-right-radius: 12px;
+width: var(--element-width);
+height: var(--element-height);
+margin: var(--margin-default);
+}
+
+input::placeholder{
+color: default;    
+}
+
+.card_info {
+border: 5px double black;
+}
+
+table{
+border-collapse: collapse; 
+border: 1px solid gray;
+border-radius: 5px;
+background-color: rgb(98, 138, 98);
+text-align: center;
+padding: var(--pading-default);
+}
+
+th, td { 
+border: 1px solid black;
+padding: var(--pading-default);
+text-align: center;
+margin: 10px;
+}
+
+th {
+background-color: var(--secundary-background);
+}
+
+td {
+background-color: var(--primary-background);
+}
+
+.cardlogo {
+border: 3px double brown;
+border-radius: 5px;
+background-color: brown;
+text-align: center;
+width: 300px;
+align-items: center;
+margin: var(--margin-default);
+height: auto;
+}
+
+.cardlogo img{
+width: 250px;
+}
+
+.item-left {
+justify-content: left;
+align-items: left;
+text-align: left;
+}
+ 
+button:hover {
+background-color: darkblue;
+transform: scale(1.01);
+}
